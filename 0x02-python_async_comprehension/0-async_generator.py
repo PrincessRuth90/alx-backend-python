@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Task 0
+Task Zero
 """
 import asyncio
 from typing import Generator
