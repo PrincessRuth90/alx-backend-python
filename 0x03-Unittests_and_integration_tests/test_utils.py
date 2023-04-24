@@ -13,9 +13,8 @@ from utils import (
 )
 
 
-
 class TestAccessNestedMap(unittest.TestCase):
-    """a fxn that creates TestAccessNestedMap class that inherits from unittest.TestCase"""
+    """a fxn that creates TestAccessNestedMap class"""
     @parameterized.expand([
         ({"a": 1}, ("a",), 1),
         ({"a": {"b": 2}}, ("a",), {"b": 2}),
@@ -76,7 +75,7 @@ class TestMemoize(unittest.TestCase):
                 return self.a_method()
         with patch.object(
                 TestClass,
-                "an assert method",
+                "a_method",
                 return_value=lambda: 42,
                 ) as memo_fxn:
             test_class = TestClass()
